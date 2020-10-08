@@ -171,12 +171,13 @@ Use the filterByWord function below to do the following:
 */
 
 function filterByWord(arr,string){
-    let filter = [];
+    let newarr = [];
     for(let i=0; i < arr.length; i++){
         if(arr[i].includes(string)){
-            filter.push(arr[i]);
+            newarr.push(arr[i]);
         }
     }
+    return newarr;
 }
 console.log(filterByWord(originalFlavors,'Chocolate'));
 
